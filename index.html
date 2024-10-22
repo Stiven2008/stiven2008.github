@@ -1,0 +1,471 @@
+<!-- index.html (TRANSFORCORP S.A.S) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforcorp - Inicio</title>
+    <style>
+        /* Estilos globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header y Navegación */
+        header {
+            background-color: #2c3e50;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        .experiences {
+  display: flex;
+  flex-direction: column;
+}
+
+.experiences-body {
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+}
+
+.wave {
+  width: 100%;
+  position: relative;
+  top: 2px;
+}
+
+.wave_bottom {
+  transform: scaleY(-1);
+  top: -2px;
+}
+
+.experiences-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 25px;
+}
+
+.experience-date {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--secundary-color);
+}
+
+.experience-company {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.experience-position {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.experience-description {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.experience {
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 950px) {
+  .experiences-title {
+    font-size: 50px;
+    margin: 35px 0;
+  }
+
+  .experience-date {
+    font-size: 40px;
+  }
+
+  .experience-company {
+    font-size: 25px;
+  }
+
+  .experience-position {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .experience-description {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.3;
+  }
+
+  .experience {
+    padding: 0;
+  }
+
+  .experience_left {
+    text-align: right;
+  }
+
+  .experiences-grid {
+    display: grid;
+    grid-template-columns: auto 2px auto;
+    gap: 20px 70px;
+    padding: 70px;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .line {
+    background-color: var(--text-color-inverse);
+    position: relative;
+  }
+
+  .line::before,
+  .line::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--text-color-inverse);
+    border-radius: 50%;
+
+    position: absolute;
+    top: -20px;
+    left: -9px;
+  }
+
+  .line::after {
+    top: 100%;
+    z-index: 1;
+  }
+}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">TRANSFORCORP S.A.S</a>
+            <div class="nav-links">
+                <a href="Inicio.html">Inicio</a> 
+                <a href="Equipo.html">Quienes somos</a>
+                <a href="Horizonte.html">Horizonte Empresarial</a>
+                <a href="Producto.html">Objeto social</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenidos a Transforcorp</h1>
+            <p>Transformando el futuro</p>
+            <a href="contacto.html" class="cta-button">Contáctanos</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: transforcorp@gmail.com</p>
+                <p>Teléfono: (+57) 3009508799</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                     <a href="https://facebook.com/Transforcorp Ref" target="_blank">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://twitter.com/transforcorp" target="_blank">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                    <a href="https://instagram.com/transforcorp" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- servicios.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Mismo head que index.html -->
+    <title>Mi Empresa - Servicios</title>
+    <style>
+        /* Copiar estilos globales de index.html */
+        
+        /* Estilos específicos de servicios */
+        .services-container {
+            max-width: 1200px;
+            margin: 100px auto 50px;
+            padding: 0 1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .service-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            margin: 1rem 0;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <!-- Mismo header que index.html -->
+
+    <div class="services-container">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Sombrilla Adaptable Modificada</h3>
+                <p> Es una sombrilla que tiene una adaptación a la espalda gradualmente y ofrece comodidad a los clientes, además de poder utilizar libremente las manos.</p>
+            </div>
+            <div class="service-card">
+                <h3>Estuche de Sombrilla Adaptable</h3>
+                <p>Es un kit que tiene la finalidad de abarcar los elementos secundarios que tiene la sombrilla adaptable .</p>
+            </div>
+            <div class="service-card">
+                <h3>¿Qué ofrece la sombrilla?</h3>
+                <p>La sombrilla adaptable ofrece un amplio grado de comodidad en su uso, además de graduar la distancia en la que se usa y al estar equipada en la zona del espaldar poder utilizar con libertad las manos.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mismo footer que index.html -->
+</body>
+</html>
+
+<!-- contacto.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Mismo head que index.html -->
+    <title>Mi Empresa - Contacto</title>
+    <style>
+        /* Copiar estilos globales de index.html */
+        
+        /* Estilos específicos de contacto */
+        .contact-container {
+            max-width: 800px;
+            margin: 100px auto 50px;
+            padding: 0 1rem;
+        }
+
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        .submit-button {
+            background-color: #3498db;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Mismo header que index.html -->
+
+    <div class="contact-container">
+        <h2>Contáctanos</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Enviar Mensaje</button>
+        </form>
+    </div>
+
+    <!-- Mismo footer que index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página con imagen de fondo</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<!-- Contenido de la página -->
+
+</body>
+</html>
